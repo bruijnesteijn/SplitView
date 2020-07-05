@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AnotherSplitView
+//  BusinessChat
 //
-//  Created by Bart Bruijnesteijn on 06/04/2020.
+//  Created by Bart Bruijnesteijn on 16/01/2020.
 //  Copyright © 2020 Bart Bruijnesteijn. All rights reserved.
 //
 
@@ -10,11 +10,11 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(named: "AccentColor") ?? UIColor.black]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(named: "AccentColor") ?? UIColor.white]
+
         return true
     }
 

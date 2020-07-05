@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		741F98C7243B246900B94870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F98C6243B246900B94870 /* AppDelegate.swift */; };
 		741F98C9243B246900B94870 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F98C8243B246900B94870 /* SceneDelegate.swift */; };
-		741F98CB243B246900B94870 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F98CA243B246900B94870 /* ContentView.swift */; };
-		741F98CD243B246B00B94870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741F98CC243B246B00B94870 /* Assets.xcassets */; };
+		741F98CB243B246900B94870 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F98CA243B246900B94870 /* MainView.swift */; };
+		741F98CD243B246B00B94870 /* Application.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741F98CC243B246B00B94870 /* Application.xcassets */; };
 		741F98D0243B246B00B94870 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741F98CF243B246B00B94870 /* Preview Assets.xcassets */; };
 		741F98D3243B246B00B94870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741F98D1243B246B00B94870 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,11 +19,12 @@
 		741F98C3243B246900B94870 /* AnotherSplitView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherSplitView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741F98C6243B246900B94870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		741F98C8243B246900B94870 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		741F98CA243B246900B94870 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		741F98CC243B246B00B94870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		741F98CA243B246900B94870 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		741F98CC243B246B00B94870 /* Application.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Application.xcassets; sourceTree = "<group>"; };
 		741F98CF243B246B00B94870 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		741F98D2243B246B00B94870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		741F98D4243B246B00B94870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746F59B324B1FB95004C1653 /* AnotherSplitView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnotherSplitView.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +57,11 @@
 		741F98C5243B246900B94870 /* AnotherSplitView */ = {
 			isa = PBXGroup;
 			children = (
+				746F59B324B1FB95004C1653 /* AnotherSplitView.entitlements */,
 				741F98C6243B246900B94870 /* AppDelegate.swift */,
 				741F98C8243B246900B94870 /* SceneDelegate.swift */,
-				741F98CA243B246900B94870 /* ContentView.swift */,
-				741F98CC243B246B00B94870 /* Assets.xcassets */,
+				741F98CA243B246900B94870 /* MainView.swift */,
+				741F98CC243B246B00B94870 /* Application.xcassets */,
 				741F98D1243B246B00B94870 /* LaunchScreen.storyboard */,
 				741F98D4243B246B00B94870 /* Info.plist */,
 				741F98CE243B246B00B94870 /* Preview Content */,
@@ -102,7 +104,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Bart Bruijnesteijn";
 				TargetAttributes = {
 					741F98C2243B246900B94870 = {
@@ -135,7 +137,7 @@
 			files = (
 				741F98D3243B246B00B94870 /* LaunchScreen.storyboard in Resources */,
 				741F98D0243B246B00B94870 /* Preview Assets.xcassets in Resources */,
-				741F98CD243B246B00B94870 /* Assets.xcassets in Resources */,
+				741F98CD243B246B00B94870 /* Application.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +150,7 @@
 			files = (
 				741F98C7243B246900B94870 /* AppDelegate.swift in Sources */,
 				741F98C9243B246900B94870 /* SceneDelegate.swift in Sources */,
-				741F98CB243B246900B94870 /* ContentView.swift in Sources */,
+				741F98CB243B246900B94870 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +194,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +255,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,9 +288,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AnotherSplitView/AnotherSplitView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AnotherSplitView/Preview Content\"";
-				DEVELOPMENT_TEAM = 9X3HHK8VXA;
+				DEVELOPMENT_TEAM = WHPTPCER3U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AnotherSplitView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,6 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.klm.mobile.iphone.AnotherSplitView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,9 +310,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AnotherSplitView/AnotherSplitView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AnotherSplitView/Preview Content\"";
-				DEVELOPMENT_TEAM = 9X3HHK8VXA;
+				DEVELOPMENT_TEAM = WHPTPCER3U;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AnotherSplitView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.klm.mobile.iphone.AnotherSplitView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
