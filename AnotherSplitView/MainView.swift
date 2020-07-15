@@ -25,23 +25,13 @@ struct MainView_Previews: PreviewProvider {
 
 struct ListView: View {
     var body: some View {
-        
         VStack {
-            NavigationLink(destination: DetailedView1(name: "Option 1")) {
-                Text("Option 1")
-                    .foregroundColor(.accentColor)
-            }
-            .padding()
-            NavigationLink(destination: DetailedView2(name: "Option 2")) {
-                Text("Option 2")
-                    .foregroundColor(.accentColor)
-            }
-            .padding()
-            NavigationLink(destination: DetailedView3(name: "Option 3")) {
-                Text("Option 3")
-                    .foregroundColor(.accentColor)
-            }
-            .padding()
+            NavigationLink("Option 1", destination: DetailedView1(name: "Option 1"))
+                .padding()
+            NavigationLink("Option 2", destination: DetailedView2(name: "Option 2"))
+                .padding()
+            NavigationLink("Option 3", destination: DetailedView3(name: "Option 3"))
+                .padding()
     }
     .navigationBarTitle("Options")
     
